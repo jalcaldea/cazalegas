@@ -123,7 +123,8 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
     right: 0;
     top: 0;
     left: 30%;
-    width: 70%;
+    width: 68%;
+	right: 2%;
 }
 #menu li {
     height: 1em;
