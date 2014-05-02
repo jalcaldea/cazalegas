@@ -1,0 +1,191 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet ms', Arial, sans-serif;
+    color: #7e7e7e;
+    list-style-type: none;
+    size: 0.6em;
+	
+
+	
+}
+p {
+    padding: 0.6em;
+}
+body {
+    width: 70%;
+    margin: 0 auto;
+		-webkit-box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.38);
+-moz-box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.38);
+box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.38);
+}
+#head {
+    height: 10%;
+    background-color: #e7ebe9;
+	-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+-moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+}
+#logo {
+    padding: 1.5em;
+    vertical-align: top;
+    font-style: italic;
+    font-weight: bold;
+}
+#imgs {
+    height: 54px;
+    background-color: #37b84a;
+    /*background-image: url("img/bg_head_middle.jpg");*/
+		-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+-moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+}
+#hormenu {
+    height: 41px;
+    background-color: #e8e8e8;
+    /*background-image: url("img/bg_head_bottom_nav.jpg");*/
+	-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+-moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+}
+.menus {
+    padding: 11px;
+    border-right: 1px solid #6f6f6f;
+    display: inline-block;
+    border-color: #8d8d8d;
+    font-weight: bold;
+    position: relative;
+    margin-left: -5px;
+}
+#menu1 {
+    margin-left: 0px;
+}
+.menus:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.menuDesp {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 150px;
+    background-color: #f7f7f7;
+    border: 1px solid #6f6f6f;
+    display: none;
+    list-style-type: none;
+    z-index: 10;
+    font-size: 0.8em;
+    height: inherit;
+    opacity: 0;
+}
+.menuDesp li {
+    border-bottom: 1px solid #6f6f6f;
+    padding: 5px;
+    padding-left: 15px;
+    border-color: #8d8d8d;
+}
+.menuDesp li:hover {
+    background-color: #bad896;
+    color: #47603c;
+}
+/*
+#menu2:hover ul {
+    display: block;
+}
+.menuDesp:hover {
+    display: block;
+}
+*/
+
+#breadcrum {
+    /*background-image: url("img/bg_head_breadcrumbs.jpg");
+    background-repeat: repeat-y;*/
+    padding: 8px;
+    padding-left: 10px;
+    color: #385ca0;
+    font-weight: bold;
+}
+#content {
+    position: relative;
+    /*background-image: url("img/bg_main_withnav.jpg");
+    background-repeat: repeat-y;*/
+}
+#left {
+    position: absolute;
+    width: 200px;
+	border-radius: 0px 20px 0px 0px;
+	background-color: #dcdcdc;
+	-webkit-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
+-moz-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
+box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
+}
+#right {
+    position: relative;
+    right: 0;
+    top: 0;
+    left: 230px;
+    width: 640px;
+}
+#menu li {
+    height: 1em;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c1c1c1;
+	
+}
+#menu li a {
+    color: #164090;
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 10px;
+}
+#left h3 {
+    padding-left: 10px;
+    /*background: url("img/bg_bullet_full_1.gif") repeat 0 50%;*/
+    border-radius: 0px 15px 0px 0px;
+    width: 190px;
+    color: #f9f9f9;
+	background-color: #888888;
+	-webkit-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
+-moz-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
+box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
+}
+#title {
+    font-weight: 700;
+    font-stretch: extra-expanded;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #c1c1c1;
+}
+.desc * {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    color: #385ca0;
+}
+
+.list li{
+list-style-type: square;
+margin-left: 30px;
+}
+
+#desc {
+    color: #3d64d0;
+    font-weight: bold;
+    margin-bottom: 10px;
+    top: 100px;
+}
+
+#foot {
+    height: 50px;
+    /*background: url("img/bg_foot.jpg");*/
+    text-align: center;
+    vertical-align: bottom;
+	background-color: #dcdcdc;
+	-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+-moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
+}
+#foot p {
+    position: relative;
+    top: 10px;
+}
