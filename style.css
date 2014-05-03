@@ -54,6 +54,7 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
     margin-left: -0.35em;
 	margin-bottom: 0.05em;
 	width: 15%;
+	text-decoration:none;
 }
 #menu1 {
     margin-left: 0em;
@@ -127,7 +128,8 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
     width: 68%;
 	right: 2%;
 }
-#menu li {
+
+#menu li{
     height: 3em;
     width: 11em;
     padding-top: 1em;
@@ -154,6 +156,7 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
     text-decoration: none;
     padding-left: 0.6em;
 }
+
 #left h3 {
     padding-left: 0.6em;
     /*background: url("img/bg_bullet_full_1.gif") repeat 0 50%;*/
@@ -191,7 +194,7 @@ margin-left: 30px;
 }
 
 #foot {
-    height: 2.5em;
+    height: 3em;
     /*background: url("img/bg_foot.jpg");*/
     text-align: center;
     vertical-align: bottom;
@@ -200,6 +203,7 @@ margin-left: 30px;
 -moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 }
+
 #foot p {
     position: relative;
     top: 0.2em;
