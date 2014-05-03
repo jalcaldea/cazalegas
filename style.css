@@ -5,22 +5,19 @@
     color: #7e7e7e;
     list-style-type: none;
     size: 0.6em;
-	
-
-	
 }
 p {
     padding: 0.6em;
 }
 body {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 		-webkit-box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.38);
 -moz-box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.38);
 box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.38);
 }
 #head {
-    height: 10%;
+    height: 10em;
     background-color: #e7ebe9;
 	-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 -moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
@@ -33,7 +30,7 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
     font-weight: bold;
 }
 #imgs {
-    height: 54px;
+    height: 5em;
     background-color: #37b84a;
     /*background-image: url("img/bg_head_middle.jpg");*/
 		-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
@@ -41,7 +38,6 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 }
 #hormenu {
-    height: 41px;
     background-color: #e8e8e8;
     /*background-image: url("img/bg_head_bottom_nav.jpg");*/
 	-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
@@ -49,38 +45,42 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 }
 .menus {
-    padding: 11px;
+    padding: 1%;
     border-right: 1px solid #6f6f6f;
     display: inline-block;
     border-color: #8d8d8d;
     font-weight: bold;
     position: relative;
-    margin-left: -5px;
+    margin-left: -0.35em;
+	margin-bottom: 0.05em;
+	width: 15%;
 }
 #menu1 {
-    margin-left: 0px;
+    margin-left: 0em;
 }
 .menus:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 .menuDesp {
     position: absolute;
-    left: 0px;
-    top: 40px;
-    width: 150px;
+    left: -0.05em;
+    top: 2.6em;
+    width: 10em;
     background-color: #f7f7f7;
-    border: 1px solid #6f6f6f;
+    border-top: 1px solid #6f6f6f;
     display: none;
     list-style-type: none;
     z-index: 10;
-    font-size: 0.8em;
+    font-size: 1em;
     height: inherit;
     opacity: 0;
 }
 .menuDesp li {
     border-bottom: 1px solid #6f6f6f;
-    padding: 5px;
-    padding-left: 15px;
+	border-left: 1px solid #6f6f6f;
+	border-right: 1px solid #6f6f6f;
+    padding: 0.3em;
+    padding-left: 0.9em;
     border-color: #8d8d8d;
 }
 .menuDesp li:hover {
@@ -99,8 +99,8 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 #breadcrum {
     /*background-image: url("img/bg_head_breadcrumbs.jpg");
     background-repeat: repeat-y;*/
-    padding: 8px;
-    padding-left: 10px;
+    padding: 0.5em;
+    padding-left: 0.6em;
     color: #385ca0;
     font-weight: bold;
 }
@@ -111,7 +111,8 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 }
 #left {
     position: absolute;
-    width: 200px;
+    width: 12.5em;
+	height: 100%;
 	border-radius: 0px 20px 0px 0px;
 	background-color: #dcdcdc;
 	-webkit-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
@@ -128,23 +129,28 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 }
 #menu li {
     height: 1em;
-    width: 200px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 12.5em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
     border-bottom: 2px solid #c1c1c1;
 	
 }
+
+#menu li:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
 #menu li a {
     color: #164090;
     font-weight: 700;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 0.6em;
 }
 #left h3 {
-    padding-left: 10px;
+    padding-left: 0.6em;
     /*background: url("img/bg_bullet_full_1.gif") repeat 0 50%;*/
     border-radius: 0px 15px 0px 0px;
-    width: 190px;
+    width: 12.3;
     color: #f9f9f9;
 	background-color: #888888;
 	-webkit-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
@@ -177,7 +183,7 @@ margin-left: 30px;
 }
 
 #foot {
-    height: 50px;
+    height: 2.5em;
     /*background: url("img/bg_foot.jpg");*/
     text-align: center;
     vertical-align: bottom;
@@ -188,5 +194,5 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 }
 #foot p {
     position: relative;
-    top: 10px;
+    top: 0.2em;
 }
