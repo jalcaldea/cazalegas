@@ -5,6 +5,7 @@
     color: #7e7e7e;
     list-style-type: none;
     size: 0.6em;
+
 }
 p {
     padding: 0.6em;
@@ -56,6 +57,10 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 	width: 15%;
 	text-decoration:none;
 }
+.menus a{
+	text-decoration:none;
+}
+
 #menu1 {
     margin-left: 0em;
 }
@@ -84,6 +89,10 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
     padding-left: 0.9em;
     border-color: #8d8d8d;
 }
+.menuDesp li a{
+    text-decoration:none;
+}
+
 .menuDesp li:hover {
     background-color: #bad896;
     color: #47603c;
