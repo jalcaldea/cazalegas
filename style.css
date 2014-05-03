@@ -128,16 +128,24 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 	right: 2%;
 }
 #menu li {
-    height: 1em;
-    width: 12.5em;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    height: 3em;
+    width: 11em;
+    padding-top: 1em;
+    padding-bottom: 0;
     border-bottom: 2px solid #c1c1c1;
 	
+    margin-left: 1em;
+    text-align: center;
 }
 
 #menu li:hover {
 	background-color: rgba(0, 0, 0, 0.1);
+
+	padding-left: 1em;
+	padding-right: 0.5em;
+
+    border-bottom:2px solid rgba(0, 0, 0, 0);
+	margin-left: 0em;
 }
 
 #menu li a {
