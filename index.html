@@ -9,8 +9,10 @@
 	<meta name="description" content="Cazalegas, ayuntamiento, vecinos, pantano, embalse, presa, winsurf, camping, talavera" />
 	
 	<link type="text/css" rel="stylesheet" href="style.css" />
-    <script src="jquery.js"></script>
-    <script src="menu.js"></script>
+    <script src="resources/jquery.js"></script>
+	<script src="resources/shiftzoom.js"></script>
+    <script src="resources/menu.js"></script>
+	<script src="resources/admin.js"></script>
 	
 	<link href="img/favicon.gif" rel="shortcut icon" type="image/gif" />
 	
@@ -27,33 +29,33 @@
     <div id="hormenu">
         <a href="index.html" id="menu1" class="menus">Inicio</a>
 
-        <div id="menu2" class="menus"><a href="pueblo.html">El Pueblo</a>
+        <div id="menu2" class="menus">El Pueblo
             <ul class="menuDesp">
-                <li><a href="pueblo.html#reseña">Reseña</a></li>
-                <li><a href="pueblo.html#historia">Historia</a></li>
-				<li><a href="pueblo.html#fotos">Fotos</a></li>
+                <li id="butres" >Reseña</li>
+                <li id="buthis">Historia</li>
+				<li id="butfot">Fotos</li>
             </ul>
         </div>
 		
 
-        <div id="menu3" class="menus"><a href="comollegar.html">Cómo llegar</a>
+        <div id="menu3" class="menus">Cómo llegar
             <ul class="menuDesp">
-                <li><a href="comollegar.html#localiz">Localización</a></li>
-                <li><a href="comollegar.html#callej">Callejero</a></li>
+                <li id="butloc">Localización</li>
+                <li id="butcall">Callejero</li>
             </ul>
         </div>
 
-        <a href="contacto.html" id="menu4" class="menus">Contacto</a>
+        <div id="menu4" class="menus">Contacto</div>
     </div>
 
     <div id="breadcrum">
         <img src="img/bg_bullet_arrow.gif">&nbsp;Inicio</div>
 
-    <div id="content">
-        <div id="left">
+    <div class="content" id="index">
+        <div class="left">
             <h3>Índice
             </h3>
-            <ul id="menu">
+            <ul class="menu">
                 <li>
                     <a href="#desc1">Bienvenida</a>
                 </li>
@@ -65,15 +67,15 @@
                 </li>
             </ul>
         </div>
-        <div id="right">
-            <div id="title">
+        <div class="right">
+            <div class="title">
                 <h2>Cazalegas. Sol, Agua y Tranquilidad</h2>
             </div>
-            <div class="desc">
-                <a name="desc1">
+            <div id="bienvenida" class="contentdiv">
+                <a name="desc1"class="desc">
                     <h3>Bienvenida</h3>
                 </a>
-            </div>
+            
             <p>Desde el ayuntamiento de Cazalegas me gustaría darte la bienvenida a la web del municipio de Cazalegas y hacer una breve reseña.</p>
 			<p>Es de destacar la situación geográfica de Cazalegas, situado en el km 101 de la Nacional V a tan sólo 1 hora de la Capital de España, a 15 minutos de la localidad de Talavera de la Reina (Toledo) y además pertenecemos a la comarca de la Sierra de San Vicente.</p>
 			<p>Nuestro mayor tesoro, el PANTANO, que recoge las aguas provenientes del Río Alberche, en el que se puede disfrutar de su rica flora en sus orillas además de ser un magnifico lugar de observación de aves. No deje de visitarlo, en él podrá practicar deportes acuáticos además de poder disfrutar de días maravillosos en compañía de familiares y amigos.</p>
@@ -81,12 +83,12 @@
 			<p>Por último , espero que esta página Web les sea de gran utilidad y además esa un modo de enlace entre la población en general y este Ayuntamiento.</p><br/>
 			<p style="text-align:end;">D. AMANDO BLANCO CARRASQUILLA (2013),</p>
 			<p style="text-align:end;">Alcalde de Cazalegas.</p>
-               
-            <div class="desc">
-                <a name="desc2">
+            
+			
+			
+                <a name="desc2" class="desc">
                     <h3>Información de interés</h3>
                 </a>
-            </div>
             <ul class="list">
                 <li><b>Dirección:</b> Plaza de España, 1</li>
                 <li><b>C.P.:</b> 45683</li>
@@ -95,23 +97,220 @@
 				<li><b>web:</b> <a href="http://www.cazalegas.es">www.cazalegas.es</a></li>
                 </ul></br>
 
-			<div class="desc">
 			
-                <a name="desc3">
+                <a name="desc3" class="desc">
                     <h3>Enlaces de interés</h3>
                 </a>
-            </div>
             <ul class="list">
                 <li><a href="http://www.cazalegas.es">Página Oficial del ayuntamiento</a></li>
 				<li><a href="http://es.wikipedia.org/wiki/Cazalegas">Cazalegas en Wikipedia</a></li>
 				<li><a href="http://www.diputoledo.es/global/areas/turismo/muni_datos.php?id_area=11&amp;id_seg=&amp;id_cat=21&amp;f=21&amp;codine=45045&amp;id_ent=99">Diputación de Toledo</a></li>
 				<li><a href="http://www.eltiempo.es/cazalegas.html">El tiempo</a></li>
                 </ul>
-             
+            </div> 
 				
         </div></br></br>
     </div>
-	</div>
+	
+	<div class="content" id="pueblo">
+        <div class="left">
+            <h3>Índice
+            </h3>
+            <ul class="menu">
+                <li id="butres2"><a>Reseña</a></li>
+				<li id="buthis2"><a>Historia</a></li>
+				<li  id="butfot2"><a>Fotos</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="title">
+                <h2>El Pueblo</h2>
+            </div>
+            <div id="resenia">
+                <h3 class="desc">Reseña</h3>
+            <p>El pueblo está dotado con las infraestructuras necesarias para poder desarrollar una vida cómoda en el mismo.</p>
+			<p>Dispone de 1 tienda de alimentación, 2 carnicerías, panadería, pastelería, pescadería, tienda de frutos secos y bollería, y bazar, para las compras diarias, además de un kiosco de prensa. Y los sábados mercadillo de ropa y calzado y frutas y verduras</p>
+			<p>Hay un taller mecánico con servicio de grúa en el pueblo.</p>
+			<p>El pueblo cuenta con 7 bares y una discoteca. En el Pantano hay un merendero y un Camping con bar y restaurante.</p>
+			<p>Además hay muchas empresas instaladas en el Polígono Industrial, como talleres mecánicos, ferreterías, tiendas de muebles, gasolinera, almacén de material de obras, ludoteca, etc.</p>
+			<p>Para alojarse hay un hostal y dos casas rurales en el pueblo y el camping a unos 2 kilómetros.</p>
+			<p>Para los pequeños hay una escuela de primaria. Tienen concertado un autobús que realiza el traslado a Talavera para estudios superiores.</p>
+			<p>Dispone de Médico, ATS, y farmacia. En sanidad dependen del Centro de Salud del pueblo de Cebolla. Para urgencias hospitalarias y consultas de especialistas hay que trasladarse a Talavera de la Reina.</p>
+			<p>El pueblo dispone de Policía Local (4 agentes) que alternan sus labores de vigilancia del pueblo, en el pantano y en el polígono industrial. Existen tres parques infantiles con juegos, el Parque de la Alameda, el Parque Magdalena Carranque, y el Parque de Los Depósitos.</p>
+			<p>Tenemos también la piscina municipal que funciona durante la época estival.</p>
+			<p>Además hay dos peluquerías, una de ellas para jubilados, y una sucursal de Caja de Castilla La mancha que dispone de cajero automático.</p></br>
+            
+			</div>
+			
+			<div id="historia">
+                    <h3 class="desc">Historia</h3>
+            
+            <p>Cazalegas presenta unas ciertas novedades, con respecto a otros pueblos, por lo que respecta a su origen. Todas las referencias hablan de un origen incierto, aunque se suele coincidir en destacar lo antiguo de su fundación. Por lo tanto, no se trata de un pueblo de señorío fundado con posterioridad al avance cristiano de la reconquista, sino que se trata de un pueblo con antecedentes ¿celtas?, romanos, visigodos y árabes anteriores al año de 1086.</p>
+			
+			<p>Uno de los testimonios de la antigüedad del poblamiento de Cazalegas nos lo muestra el reciente estudio, publicado en Anales toledanos nº XXXIV, realizado por un equipo coordinado por D. Dionisio Urbina, sobre un hallazgo arqueológico (varias tumbas) donde se pueden observar, entre otros detalles, características de la alfarería doméstica. Encontrado casualmente junto al río Alberche, en la zona donde se localiza el actual pantano, nos presenta la identidad y características de cuatro individuos, al parecer indígenas, así como del enterramiento, avanzando teorías sobre el emplazamiento del primitivo núcleo de población y del cementerio.</p>
+			
+			<p>Se ha dicho que Cazalegas tiene su origen en la antigua “Cazalia”, ciudad romana, pero no existen datos para confirmar esta afirmación. Según un manuscrito de tiempos del cardenal Lorenzana, de la Biblioteca Provincial de Toledo, en tiempos de Wamba residió algún tiempo en Cazalegas un obispo que quiso hacerse independiente del Metropolitano, que residía en Mérida; este manuscrito da a la villa el nombre de Vivaqua, añadiendo que corresponde a la villa actual de Cazalegas.</p>
+			
+			<p>Según el profesor Jiménez de Gregorio el topónimo Cazalegas pudiera derivarse de la voz céltica “Caçaliecas”. En 1156 aparece en un documento con el nombre de “Faztalegas” (nombre de origen árabe que viene a significar “tierra libre”).</p>
+			
+			<p>Desde 1328 hasta 1369, Talavera y toda la tierra de su jurisdicción, perteneció a señorío regio porque fue entregada como dote a la reina Dª María de Portugal (por eso se llamó Talavera de la Reina). En 1369 fue entregada, como merced del rey Enrique II, al arzobispo de Toledo D. Gómez Manrique y sus sucesores; por lo tanto, Cazalegas dependía de la jurisdicción de Talavera de la Reina y del señorío eclesiástico de los primados de Toledo.</p>
+			
+			<p>El señorío de los arzobispos de Toledo se mantuvo hasta 1812, siendo el último señor D. Luis María de Borbón. En dicha fecha, con la abolición de los señoríos, se procura acabar con las estructuras feudales del Antiguo Régimen e iniciar una etapa constitucional en la que cada ayuntamiento se rigiera por sí mismo sin dependencia de ningún señor, laico o eclesiástico.</p>
+			
+			<p>Los condes de Aguilafuente levantaron un palacio, que aún subsiste, y según el libro de Don Manuel Foronda y Aguilera “Estancias y viajes del emperador Carlos V”, en él se detuvo y comió el emperador el día 7 de abril de 1525 cuando marchaba camino de Guadalupe. El 21 de febrero del mismo año, procedente de Illescas y camino de Sevilla, volvió a Cazalegas y comió de nuevo en el mismo palacio.</p>
+			
+			<p>Otros episodios señalados, desgraciados por el sufrimiento que siempre traen consigo, son los conflictos bélicos que tuvieron especial repercusión en Cazalegas como la Guerra de la Indepencia y la Guerra Civil española, ambos con episodios que presentan el mismo nombre: “La batalla de Talavera”.</p>
+			
+			<p style="text-align:end;">"Escudo Heráldico Municipal de Cazalegas" (Enero 2001),</p>
+			<p style="text-align:end;">D. Eusebio Nuño Romero, Lic. en Geografía e Historia.</p>
+            
+			</div>
+			
+            <div id="fotos">
+          
+			<h3 class="desc">Fotos</h3>
+            
+            <p>Aquí se encuentran unas cuantas fotos del pueblo:</p></br> 
+					AQUI VAN LAS FOTOS - CON LA ANIMACIÓN EN VOKI
+					
+			</div>
+			
+			
+			
+			<div id="resumen">
+                <a name="reseña" class="desc">
+                    <h3>Reseña</h3>
+                </a>
+            
+            <p>El pueblo está dotado con las infraestructuras necesarias para poder desarrollar una vida cómoda en el mismo.</p>
+			<p>Dispone de 1 tienda de alimentación, 2 carnicerías, panadería, pastelería, pescadería, tienda de frutos secos y bollería, y bazar, para las compras diarias, además de un kiosco de prensa. Y los sábados mercadillo de ropa y calzado y frutas y verduras</p><p id="butres3" class="button">Leer Más</p>
+            		
+			
+                <a name="historia" class="desc">
+                    <h3>Historia</h3>
+                </a>
+            
+            <p>Cazalegas presenta unas ciertas novedades, con respecto a otros pueblos, por lo que respecta a su origen. Todas las referencias hablan de un origen incierto, aunque se suele coincidir en destacar lo antiguo de su fundación. Por lo tanto, no se trata de un pueblo de señorío fundado con posterioridad al avance cristiano de la reconquista, sino que se trata de un pueblo con antecedentes ¿celtas?, romanos, visigodos y árabes anteriores al año de 1086.</p><p id="buthis3" class="button">Leer Más</p>
+			
+                <a name="fotos" class="desc">
+                    <h3>Fotos</h3>
+                </a>
+            
+            <p>Aquí se encuntran un conjunto de fotografías de la localidad.</p><p id="butfot3" class="button">Leer Más</p>
+				
+					
+			</div>
+			
+			
+			
+        </div></br></br>
+    </div>
+	
+	<div class="content" id="como">
+        <div class="left">
+            <h3>Índice
+            </h3>
+            <ul class="menu">
+                <li id="butloc2"><a>Localización</a></li>
+				<li id="butcall2"><a>Callejero</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="title">
+                <h2>Cómo Llegar</h2>
+            </div>
+            <div id="localiz">
+                    <h3 class="desc">Localización</h3>
+            <p>Pertenece a la Comarca de La Sierra de San Vicente, provincia de Toledo, Comunidad de Castilla La Mancha</p>
+			<h4>Distancias</h4>
+			<p>14 kms a Talavera de la Reina<br/>101 kms a Madrid<br/> 2 kms a la Autovía de Extremadura<br/>70 kms a Toledo</p><br/>
+			<h4>Como llegar</h4><br/>
+			<ul class="list">
+			<li>Coche:
+				<ul>
+					<li>Desde Madrid por la A5. Para evitar el atasco podemos tomar la Radial 5 (peaje).</li>
+					<li>Desde Talavera se puede venir por la Autovía en dirección a Madrid o por la carretera del pantano.</li>
+				</ul>
+			</li>
+			<li>Autobús: (tiene parada en el cruce de la A5 y la carretera que llega hasta el pueblo)</li>
+			<li>Tren/RENFE:  www.renfe.es Tel. información 902 24 02 02, Tel. Talavera. 925 801 388. Estación más cercana: Talavera de la Reina</li>
+			</ul><br/>
+			
+			<h4>Mapa</h4>
+			
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6111.905704524539!2d-4.6757824999999915!3d40.00950069999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4023a7e36a72e3%3A0x41b31f9975bded3d!2s45683+Cazalegas!5e0!3m2!1ses!2sus!4v1399137573126" width="600" height="450" frameborder="0" style="border:0"></iframe>
+
+			</div>
+				
+			<div id="callej">
+                    <h3 class="desc">Callejero</h3>
+            
+			<p>Este es el callejero de cazalegas:</p>
+
+			<div id"plano">
+			<img alt="Callejero" class="shiftzoom" onLoad="shiftzoom.add(this,{zoom:0});" src="img/callejero.png" width="534" height="540"/>
+			</div>
+			
+			</div>
+			
+			
+			<div id="resucomo">
+                    <h3 class="desc">Localización</h3>
+            <p>Pertenece a la Comarca de La Sierra de San Vicente, provincia de Toledo, Comunidad de Castilla La Mancha</p>
+			<h4>Distancias</h4>
+			<p>14 kms a Talavera de la Reina<br/>101 kms a Madrid<br/> 2 kms a la Autovía de Extremadura<br/>70 kms a Toledo</p><br/>
+			<p class="button" id="butloc3">Ver Más</p>
+
+
+				
+
+            <h3 class="desc">Callejero</h3>
+            
+			<p>Callejero de la localidad</p>
+			<p class="button" id="butcall3">Ver Más</p>
+
+
+			
+			</div>
+			
+			
+			
+        </div></br></br>
+    </div>
+	
+	<div class="content" id="contacto">
+        <div class="left">
+            <h3>Índice
+            </h3>
+            <ul class="menu">
+                <li>
+                    <a href="#postal">Envía una postal</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="desc">
+                <a name="postal">
+                    <h3>Envía una postal</h3>
+                </a>
+            </div>
+            <p>Envía una postal a quien tú quieras:</p>
+			
+			<form method="post" action="enviarPostal">
+			
+			<p>Selecciona una foto:</p>
+			<p style="vertical-align: top;">Destinatario: <input type="email" name="dest"/></p>
+			<p style="vertical-align: top;">Mensaje: <textarea rows="4" cols="50"></textarea></p>
+			<input type="submit" value="Enviar Postal"/>
+			</form>
+            
+			
+        </div></br></br>
+    </div>
+	
     <div id="foot">
         <p>Designed by J. Alcalde A </p>
     </div>

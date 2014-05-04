@@ -114,12 +114,12 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
     color: #385ca0;
     font-weight: bold;
 }
-#content {
+.content {
     position: relative;
     /*background-image: url("img/bg_main_withnav.jpg");
     background-repeat: repeat-y;*/
 }
-#left {
+.left {
     position: absolute;
     width: 12.5em;
 	height: 90%;
@@ -129,7 +129,7 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 -moz-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 }
-#right {
+.right {
     position: relative;
     right: 0;
     top: 0;
@@ -138,7 +138,7 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 	right: 2%;
 }
 
-#menu li{
+.menu li{
     height: 3em;
     width: 11em;
     padding-top: 1em;
@@ -149,7 +149,7 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
     text-align: center;
 }
 
-#menu li:hover {
+.menu li:hover {
 	background-color: rgba(0, 0, 0, 0.1);
 
 	padding-left: 1em;
@@ -159,14 +159,14 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 	margin-left: 0em;
 }
 
-#menu li a {
+.menu li a {
     color: #164090;
     font-weight: 700;
     text-decoration: none;
     padding-left: 0.6em;
 }
 
-#left h3 {
+.left h3 {
     padding-left: 0.6em;
     /*background: url("img/bg_bullet_full_1.gif") repeat 0 50%;*/
     border-radius: 0px 15px 0px 0px;
@@ -177,7 +177,7 @@ box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 -moz-box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 box-shadow: inset 16px 8px 10px -12px rgba(0,0,0,0.38);
 }
-#title {
+.title {
     font-weight: 700;
     font-stretch: extra-expanded;
     padding-bottom: 5px;
@@ -199,7 +199,7 @@ margin-left: 30px;
 	list-style-type:disc;
 }
 
-#desc {
+.desc {
     color: #3d64d0;
     font-weight: bold;
     margin-bottom: 10px;
@@ -220,4 +220,40 @@ box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.38);
 #foot p {
     position: relative;
     top: 0.2em;
+}
+.button {
+	-moz-box-shadow:inset 0px 0px 0px 1px #474747;
+	-webkit-box-shadow:inset 0px 0px 0px 1px #474747;
+	box-shadow:inset 0px 0px 0px 1px #474747;
+	background-color:#6a6a6a;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+}.button:hover {
+	background-color:#787878;
+}.button:active {
+	position:relative;
+	top:1px;
 }
