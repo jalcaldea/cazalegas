@@ -480,20 +480,14 @@
             </div>
             <p>Envía una postal a quien tú quieras:</p>
 			
-			<script>
-			function enviarMail(){
 			
-				var dest = $('#dest').val();
-				var mensaje = $('#mensaje').val();
-				window.open('mailto:'+dest+'?subject=Ven a Cazalegas&body='+mensaje+'<img src="http://kekoalk.github.io/cazalegas/img/escudo.png"/>');}	
-			</script>
+			<form method="get" action="mailto:">
 			
-			<form method="post" >
-			
-			<p>Selecciona una foto:</p>
-			<p style="vertical-align: top;">Destinatario: <input title="e-mail del destinatario" type="email" name="dest"/></p>
-			<p style="vertical-align: top;">Mensaje: <textarea name="mensaje" title="Contenido de la postal" rows="4" cols="50"></textarea></p>
-			<input class="button" onClick="enviarMail();" type="submit" value="Enviar Postal"/>
+	
+			<p style="vertical-align: top;">Destinatario: <input title="e-mail del destinatario" type="email" name="cc"/></p>
+			<p style="vertical-align: top;">Mensaje: <textarea name="body" title="Contenido de la postal" rows="4" cols="50">Te lo pasarás genial! :)</textarea></p>
+			<input type="hidden" value="Vente a Cazalegas" name="subject" />
+			<input class="button"  type="submit" value="Enviar Postal"/>
 			</form>
             
 			
