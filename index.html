@@ -9,11 +9,18 @@
 	<meta name="description" content="Cazalegas, ayuntamiento, vecinos, pantano, embalse, presa, winsurf, camping, talavera" />
 	
 	<link type="text/css" rel="stylesheet" href="style.css" />
-    <script src="resources/jquery.js"></script>
-	<script src="resources/shiftzoom.js"></script>
-    <script src="resources/menu.js"></script>
-	<script src="resources/admin.js"></script>
-	<script src="resources/reproduct.js"></script>
+    <script src="js/jquery.js"></script>
+	<script src="js/shiftzoom.js"></script>
+    <script src="js/menu.js"></script>
+	<script src="js/admin.js"></script>
+	<script src="js/fotos.js"></script>
+	<script src="js/reproduct.js"></script>	
+
+	<!-- least.js JS-file -->
+	<script src="js/least.min.js" defer="defer"></script>
+	<!-- Lazyload JS-file -->
+	<script src="js/jquery.lazyload.min.js" defer="defer"></script>
+	
 	
 	<link href="img/favicon.gif" rel="shortcut icon" type="image/gif" />
 	
@@ -49,7 +56,7 @@
         <div id="menu4" class="menus">Contacto</div>
     </div>
 
-    <div id="breadcrum"><p style="text-align:right;"><audio controls="" onerror="fallo(event)" src="song.wav"></p></div>
+    <div id="breadcrum"><p style="text-align:right;"><audio controls="" onerror="fallo(event)" src="resources/song.ogg"></p></div>
 
     <div class="content" id="index">
         <div class="left">
@@ -171,7 +178,175 @@
 			<h3 class="desc">Fotos</h3>
             
             <p>Aquí se encuentran unas cuantas fotos del pueblo:</p><br/> 
-					AQUI VAN LAS FOTOS - CON LA ANIMACIÓN EN VOKI
+		
+			<section>
+    <ul id="gallery">
+        <li id="fullPreview"></li>
+        
+        <li>
+            <a href="img/full/1.jpg"></a>
+            <img data-original="img/thumb/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Iglesia
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Ver Imágen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+                    Iglesia:
+                </strong> Esta es la parroquia de Nuestra Señora del Rosario.
+            </div>
+        </li>
+		
+		<li>
+            <a href="img/full/2.jpg"></a>
+            <img data-original="img/thumb/2.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Presa
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Ver Imágen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+                    Presa:
+                </strong> Imágen rescatada de la presa, formo parte del libro de las fistas del año 2011.
+            </div>
+        </li>
+		
+		<li>
+            <a href="img/full/3.jpg"></a>
+            <img data-original="img/thumb/3.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Presa
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Ver Imágen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+                    Presa:
+                </strong> Imágen actual de la presa del pantano de cazalegas.
+            </div>
+        </li>
+		
+		<li>
+            <a href="img/full/4.jpg"></a>
+            <img data-original="img/thumb/4.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Pantano
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Ver Imágen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+                    Pantano:
+                </strong> Imágen del pantano a máxima capacidad, con un lugareño prácticando uno de los deportes autóctonos, la pesca.
+            </div>
+        </li>
+		
+		<li>
+            <a href="img/full/5.jpg"></a>
+            <img data-original="img/thumb/5.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            La plaza
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Ver Imágen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+                    Plaza del pueblo:
+                </strong> Imágen festiva de la plaza durante las fistas del rosario en Agosto.
+            </div>
+        </li>
+		
+		<li>
+            <a href="img/full/6.jpg"></a>
+            <img data-original="img/thumb/6.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Fiestas
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Ver Imágen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+                    Fiestas:
+                </strong> Foto tomada durante las fiestas del rosario.
+            </div>
+        </li>
+		
+    </ul>
+</section>
 					
 			</div>
 			
