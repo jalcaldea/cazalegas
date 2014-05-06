@@ -1,5 +1,6 @@
 $(function () {
 
+
 		var index = $('#index');
         var pueblo = $('#pueblo');
 		var como = $('#como');
