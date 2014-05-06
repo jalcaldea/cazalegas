@@ -154,7 +154,7 @@
 			<div id="historia">
                     <h3 class="desc">Historia</h3>
 					
-					<p><audio id="othersound" controls="" onerror="fallo(event)" src="resources/lectura.wav">Your browser does not support the <code>audio</code> element.</audio><strong> <-- Nosotros te lo leemos.</strong></p></div>
+					<p><audio id="othersound" controls="" onerror="fallo(event)" src="resources/lectura.wav">Your browser does not support the <code>audio</code> element.</audio><strong> <-- Nosotros te lo leemos.</strong></p>
             
             <p>Cazalegas presenta unas ciertas novedades, con respecto a otros pueblos, por lo que respecta a su origen. Todas las referencias hablan de un origen incierto, aunque se suele coincidir en destacar lo antiguo de su fundación. Por lo tanto, no se trata de un pueblo de señorío fundado con posterioridad al avance cristiano de la reconquista, sino que se trata de un pueblo con antecedentes ¿celtas?, romanos, visigodos y árabes anteriores al año de 1086.</p>
 			
@@ -480,12 +480,20 @@
             </div>
             <p>Envía una postal a quien tú quieras:</p>
 			
-			<form method="post" action="enviarPostal">
+			<script>
+			function enviarMail(){
+			
+				var dest = $('#dest').val();
+				var mensaje = $('#mensaje').val();
+				{parent.location.href='mailto:'+dest+'?subject=Ven a Cazalegas&body='+mensaje+'<img src="http://kekoalk.github.io/cazalegas/img/escudo.png"/>';}}	
+			</script>
+			
+			<form method="post" >
 			
 			<p>Selecciona una foto:</p>
 			<p style="vertical-align: top;">Destinatario: <input title="e-mail del destinatario" type="email" name="dest"/></p>
-			<p style="vertical-align: top;">Mensaje: <textarea title="Contenido de la postal" rows="4" cols="50"></textarea></p>
-			<input type="submit" value="Enviar Postal"/>
+			<p style="vertical-align: top;">Mensaje: <textarea name="mensaje" title="Contenido de la postal" rows="4" cols="50"></textarea></p>
+			<input class="button" onClick="enviarMail();" type="submit" value="Enviar Postal"/>
 			</form>
             
 			
